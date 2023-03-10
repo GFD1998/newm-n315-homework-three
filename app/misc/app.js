@@ -1,0 +1,3 @@
+
+
+var spaObject = new SPAManager();
