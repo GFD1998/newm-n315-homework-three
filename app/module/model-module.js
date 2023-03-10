@@ -2,27 +2,14 @@ export default class Model{
     pageName = "HOME";
 
     homeContent = `
-    <style>.navBtn{color: white; cursor: pointer;}</style>
-        <div id="banner">
-            <div class="overlay"></div>
-            <div id="bannerAbout">
-                <h1>travel-fly</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Fugiat aliquid minus nemo sed est.</p>
-            </div>
-            <img src="assets/images/hero.png" /></div>
-        <div id="contentassets/images" style="margin-right: auto;
-        margin-left: auto;">
-            <div>
-                <img src="assets/images/content1.png" />
-            </div>
-            <div>
-                <img src="assets/images/content2.png" />
-            </div>
-            <div>
-                <img src="assets/images/content3.png" />
-            </div>
-        </div>
+    <div id="banner">
+        <img src="assets/images/homeBanner.jpg" />
+    </div>
+    <div>
+        <p style="text-align: center;padding: 2rem;">
+            Welcome to Jurassic Park Laboratories! We specialize in genetic modification and enhancement, bringing creatures of the past back to life!
+        </p>
+    </div>
     `;
 
     browseContent = `
