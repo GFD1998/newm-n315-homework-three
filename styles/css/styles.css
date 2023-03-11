@@ -100,6 +100,22 @@ h1, h2, h3, h4, h5, h6, p {
   position: absolute;
 }
 
+.overlayImageContainer {
+  background-color: rgba(0, 0, 0, 0.25);
+  /* height: 50%;
+  width: 19.5%; */
+  height: 12rem;
+  width: 17rem;
+  position: absolute;
+  text-align: center;
+  padding: 2vw;
+  display: none;
+}
+
+.overlayImageContainer div{
+  padding: 0.5rem;
+}
+
 #bLetter {
   font-size: 10rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1292,7 +1308,7 @@ nav {
   height: 10vh;
   width: 60%;
   background-color: rgba(0, 0, 0, 0);
-  position: absolute;
+  position: block;
   z-index: 999;
   border-bottom: 1px black solid;
 }
@@ -1411,6 +1427,37 @@ nav div a:hover {
 
 #logo{
   padding: 0.5rem;
+}
+
+.photoGallery{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  /* margin: 2rem; */
+}
+
+.imageContainer{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 100%;
+}
+
+.imageContainerSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imageContainer img{
+  margin: 5vw;
+  width: 100%;
 }
 
 @media only screen and (max-width: 960px) {

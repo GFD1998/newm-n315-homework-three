@@ -26,6 +26,7 @@ export default class SPAManager{
         $('title').html(`${window.location.hash.split('#')[1]} Page`);
         window.scrollTo(0, 0);
         $("#mainMenu").css("display", "none");
+        this.setTriggers();
     }
 
 
@@ -59,6 +60,27 @@ export default class SPAManager{
             }else if($("#mainMenu").css("display") == "block"){
                 $("#mainMenu").css("display", "none");
             }
+        });
+
+
+        $(window).on("resize", e => {
+            var pageWidth = e.currentTarget.innerWidth;
+            if(pageWidth >= 960){
+
+            }else{
+
+            }
+        });
+
+        this.setTriggers();
+    }
+
+    setTriggers(){
+        $(".imageContainerSection img").mouseenter(e => {
+            $(".overlayImageContainer").css("display", "block");
+        });
+        $(".overlayImageContainer").mouseleave(e => {
+            $(".overlayImageContainer").css("display", "none");
         });
     }
 }
